@@ -11,13 +11,15 @@ SSC_API_KEY = os.environ.get("SSC_API_KEY")
 SSC_PORTFOLIO_ID = os.environ.get("SSC_PORTFOLIO_ID")  # Make sure this is set!
 MONDAY_API_KEY = os.environ.get("MONDAY_API_KEY")
 
+#API URLs
 SSC_BASE_URL = "https://api.securityscorecard.io"
 MONDAY_API_URL = "https://api.monday.com/v2"
 
-BOARD_ID = 7436409221
-DOMAIN_COLUMN_ID = "short_text7__1"
-SCORE_COLUMN_ID = "text_mkqf6dzd"
-GRADE_COLUMN_ID = "text_mkqf1dky"
+#Monday.com Variables
+BOARD_ID = os.environ.get("BOARD_ID")
+DOMAIN_COLUMN_ID = os.environ.get("DOMAIN_COLUMN_ID")
+SCORE_COLUMN_ID = os.environ.get("SCORE_COLUMN_ID")
+GRADE_COLUMN_ID = os.environ.get("GRADE_COLUMN_ID")
 
 
 class MondayAPI:
